@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myportfolio_app.databinding.FragmentNotificationsBinding;
+import com.example.myportfolio_app.databinding.FragmentContactUsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class ContactUsFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentContactUsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        ContactUsViewModel notificationsViewModel =
+                new ViewModelProvider(this).get(ContactUsViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentContactUsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
