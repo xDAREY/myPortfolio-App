@@ -4,4 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_contactUs">Contact Us</string>
+    <string name="title_portfolio">Portfolio</string>
+    <string name="bio">Hi, I am Oluwadare Emmanuel a software developer and my major currently is the android mobile platform.</string>
 </resources>
