@@ -24,7 +24,7 @@ public class ContactUsFragment extends Fragment {
         binding = FragmentContactUsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
+        final TextView textView = binding.textContactUs;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

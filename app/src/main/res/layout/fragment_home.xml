@@ -10,7 +10,9 @@
     <RelativeLayout
         android:id="@+id/AboutComponent"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
+        android:background="@drawable/bg"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
@@ -31,7 +33,6 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="8dp"
                 android:textColor="@color/black"
-                android:background="@color/white"
                 android:textSize="33sp"/>
 
         </RelativeLayout>
@@ -44,7 +45,7 @@
            android:layout_alignParentRight="true">
 
             <ImageView
-                android:layout_width="200dp"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/portfolio"
                 />
@@ -56,16 +57,20 @@
     <View
         android:id="@+id/liner"
         android:layout_width="match_parent"
-        android:background="@color/black"
-        android:layout_height="2dp"
+        android:background="@color/purple_500"
+        android:layout_height="1dp"
         android:layout_marginTop="228dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/AboutComponent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <RelativeLayout
+        android:id="@+id/skillBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SKILL"
+            android:layout_centerHorizontal="true"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:textSize="25sp"
@@ -92,6 +98,8 @@
                 android:id="@+id/t1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:text="Front-end Mobile - Android XML"
                 />
@@ -100,6 +108,8 @@
                 android:id="@+id/t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_below="@id/t1"
                 android:text="Backend - Java"/>
 
@@ -107,6 +117,8 @@
                 android:id="@+id/t3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_below="@id/t2"
                 android:text="Version control - Git"/>
 
@@ -115,11 +127,123 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/t3"
+                android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="Platform - Android OS"/>
 
         </RelativeLayout>
 
     </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/liner2"
+        android:layout_width="match_parent"
+        android:background="@color/purple_500"
+        android:layout_height="1dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/skillBox"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/qualBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/liner2"
+        app:layout_constraintVertical_bias="0.231">
+
+        <TextView
+            android:id="@+id/header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUALIFICATION"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="#E70A0A"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header2">
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Professional Diploma in MMS"
+                />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/t5"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Bachelor of Science"
+                />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@id/t6"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Certification in graphics design" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
