@@ -30,6 +30,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile calculator"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/mobile_calculator"
+                    android:layout_alignParentRight="true"
+                    />
+
             </RelativeLayout>
 
 
@@ -58,23 +70,23 @@
             app:layout_constraintTop_toTopOf="@id/liner"
             app:layout_constraintVertical_bias="0.231">
 
-            <TextView
-                android:id="@+id/header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SKILL"
-                android:layout_centerHorizontal="true"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:textSize="25sp"
-                android:textColor="#E70A0A"/>
 
             <RelativeLayout
                 android:id="@+id/contentsComponent"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/header">
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Quiz App"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/mobile_calculator"
+                    android:layout_alignParentRight="true"
+                    />
 
             </RelativeLayout>
 
@@ -103,24 +115,22 @@
             app:layout_constraintTop_toTopOf="@id/liner2"
             app:layout_constraintVertical_bias="0.231">
 
-            <TextView
-                android:id="@+id/header2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="QUALIFICATION"
-                android:textStyle="bold"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:textSize="25sp"
-                android:textColor="#E70A0A"/>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/header2">
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Stopwatch"/>
 
-
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/mobile_calculator"
+                    android:layout_alignParentRight="true"
+                    />
 
             </RelativeLayout>
 
@@ -149,22 +159,22 @@
             app:layout_constraintTop_toTopOf="@id/liner3"
             app:layout_constraintVertical_bias="0.231">
 
-            <TextView
-                android:id="@+id/header3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="EXPERIENCE"
-                android:textStyle="bold"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:textSize="25sp"
-                android:textColor="#E70A0A"/>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/header3">
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Authentication App"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/mobile_calculator"
+                    android:layout_alignParentRight="true"
+                    />
 
             </RelativeLayout>
 
