@@ -23,6 +23,9 @@ public class homepage extends AppCompatActivity {
         binding = ActivityHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+//        BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigation_home) ;
+//        bottomNavigationView.getMenu().findItem(R.id.navigation_home).setChecked(true);
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
