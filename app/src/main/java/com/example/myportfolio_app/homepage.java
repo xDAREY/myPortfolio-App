@@ -1,6 +1,10 @@
 package com.example.myportfolio_app;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -13,12 +17,54 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.myportfolio_app.databinding.ActivityHomepageBinding;
 
 public class homepage extends AppCompatActivity {
+    Button gmail, twitter, github, phone, whatsapp;
 
     private ActivityHomepageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        gmail = findViewById(R.id.gmail);
+        twitter = findViewById(R.id.twitter);
+        github = findViewById(R.id.github);
+        phone = findViewById(R.id.phone);
+        whatsapp = findViewById(R.id.whatsapp);
+
+        gmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goLink("https://www.google.com");
+            }
+        });
+
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goLink("https://twitter.com/dareyx_o");
+            }
+        });
+
+        github.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goLink("https://github.com/xDAREY?tab=repositories");
+            }
+        });
+
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goLink("https://www.google.com");
+            }
+        });
+
+        whatsapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goLink("https://wa.link/llg2nk");
+            }
+        });
 
         binding = ActivityHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -35,6 +81,11 @@ public class homepage extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_homepage);
     //    NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+    }
+
+    private void goLink(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 
 }
