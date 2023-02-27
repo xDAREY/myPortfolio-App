@@ -34,7 +34,7 @@ public class homepage extends AppCompatActivity {
         gmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goLink("https://www.google.com");
+                goLink("https://gmail.com/oluwadare.emmanuel15@gmail.com");
             }
         });
 
@@ -55,7 +55,7 @@ public class homepage extends AppCompatActivity {
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goLink("https://www.google.com");
+                goLink("");
             }
         });
 
