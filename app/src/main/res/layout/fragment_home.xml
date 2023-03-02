@@ -64,7 +64,7 @@
     <View
         android:id="@+id/liner"
         android:layout_width="match_parent"
-        android:background="@color/purple_500"
+        android:background="#32E80D"
         android:layout_height="1dp"
         android:layout_marginTop="258dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -154,7 +154,7 @@
     <View
         android:id="@+id/liner2"
         android:layout_width="match_parent"
-        android:background="@color/purple_500"
+        android:background="#32E80D"
         android:layout_height="2dp"
         android:layout_marginTop="200dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -236,7 +236,7 @@
     <View
         android:id="@+id/liner3"
         android:layout_width="match_parent"
-        android:background="@color/purple_500"
+        android:background="#32E80D"
         android:layout_height="1dp"
         android:layout_marginTop="190dp"
         app:layout_constraintStart_toStartOf="parent"
